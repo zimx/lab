@@ -1,0 +1,37 @@
+{
+    "metadata": {
+      "version": 4.3,
+      "type": "Object",
+      "generator": "RCva3c_Rhinocommon_Exporter"
+    },
+    "geometries": [
+      {
+        "uuid": "543F6281-0053-4469-A816-89964E36F79D",
+        "type": "BoxBufferGeometry",
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      }
+    ],
+    "materials": [
+      {
+        "uuid": "F5791A59-4068-4E03-BAA8-9F1D9C7ED383",
+        "type": "MeshStandardMaterial",
+        "color": 25324532,
+        "roughness": 0.5,
+        "metalness": 0.5,
+        "emissive": 10,
+        "depthFunc": 3,
+        "depthTest": true,
+        "depthWrite": true
+      }
+    ],
+    "object": {
+      "uuid": "fab1cd51-5929-400a-9b38-2bc2baf4c65c",
+      "type": "Mesh",
+      "matrix": [10,0,0,0,0,10,0,0,0,0,10,0,-0.5,-0.501291,-0.454876,1],
+      "geometry": "543F6281-0053-4469-A816-89964E36F79D",
+      "material": "F5791A59-4068-4E03-BAA8-9F1D9C7ED383"
+      }
+    }
+  

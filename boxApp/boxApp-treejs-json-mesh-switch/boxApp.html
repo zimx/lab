@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Box App </title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <link href="./css/styles.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+  <!-- three.js container -->
+  <div id="container"></div>
+
+    <!-- info footer -->
+    <div id="info-text">
+       BOX APP
+    </div>
+    
+
+  <!-- user info -->
+  <div id="info-icon">i</div>
+  <div id="info">
+    <h1> boxApp</h1>
+    user info
+    </a>
+  </div>
+
+  <div id="options">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#shape" data-toggle="tab">Shape</a></li>
+      <li><a href="#color" data-toggle="tab">Color</a></li>
+      <li><a href="#metal" data-toggle="tab">Metal</a></li>
+      <li><a href="#profile" data-toggle="tab">Profile</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+      <div class="tab-pane active" id="shape">
+        <a class="shapeProfile" onclick="changeShape(circle)">
+          <div class="round"></div>
+          <span>Square</span>
+        </a>
+
+        <a class="shapeProfile" onclick="changeShape(square)">
+          <div class="square"></div>
+          <span>Sphere</span>
+        </a>
+      </div>
+
+      <div class="tab-pane" id="color">
+        <a class="btn btn-block btn-primary" onclick="changeColor(blue)">Blue</a>
+        <a class="btn btn-block btn-danger" onclick="changeColor(red)">Red</a>
+        <a class="btn btn-block btn-success" onclick="changeColor(green)">Green</a>
+        <a class="btn btn-block btn-default" onclick="changeColor(colorless)">Colorless</a>
+      </div>
+
+      
+      <div class="tab-pane" id="metal">
+        <a class="btn btn-default" onclick="changeMetal(platinum)">Platinum</a>
+        <a class="btn btn-warning" onclick="changeMetal(gold)">Gold</a>
+      </div>
+      
+      <div class="tab-pane" id="profile">
+        <span>userid</span>
+        <br>
+        <span>userinfo</span>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="./build/three.min.js"></script>
+  <script src="./build/OrbitControls.js"></script>
+  <script src="./build/Detector.js"></script>
+  <script src="./js/threex/THREEx.screenshot.js"></script>
+  <script src="./js/threex/THREEx.FullScreen.js"></script>
+  <script src="boxApp.js"></script>
+  <!-- <script src="_assets/threejs/libs/dat.gui.min.js"></script> -->
+</body>
+
+</html>
